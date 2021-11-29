@@ -1,9 +1,12 @@
 import React from 'react';
+import { Counter } from './counter';
+import counterSlice from './counterSlice';
 
 const App = () => {
     return (
         <div>
-            abcsfgsgshsfh
+            <counterSlice/>
+            <Counter/>
         </div>
     );
 };
