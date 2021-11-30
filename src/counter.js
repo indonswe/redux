@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from './counterSlice'
+import { decrement, increment, incrementByAmount } from './counterSlice'
 //import styles from './Counter.module.css'
 
 export function Counter() {
@@ -22,6 +22,12 @@ export function Counter() {
           onClick={() => dispatch(decrement())}
         >
           Decrement
+        </button>
+        <button
+          aria-label="Double value"
+          onClick={() => dispatch(incrementByAmount(5))}
+        >
+          Double
         </button>
       </div>
     </div>
